@@ -1,5 +1,27 @@
 {
   "说明": "本地合成演练资料",
-  "业务对象": "订单履约 CDC 的事务边界与宽表代次",
-  "记录": []
+  "业务对象": "广告曝光归因事件的回放窗口与结算事实",
+  "记录": [
+    {
+      "event_id": "imp-1",
+      "kind": "曝光",
+      "device": "dev-a",
+      "event_time": "2026-10-09T09:00:00Z",
+      "consent": "v1"
+    },
+    {
+      "event_id": "clk-1",
+      "kind": "点击",
+      "device": "dev-b",
+      "event_time": "2026-10-09T09:00:03Z",
+      "consent": "v1"
+    },
+    {
+      "event_id": "conv-1",
+      "kind": "转化",
+      "device": "dev-b",
+      "event_time": "2026-10-09T09:04:00Z",
+      "consent": "v1"
+    }
+  ]
 }
